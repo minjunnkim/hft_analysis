@@ -1,8 +1,11 @@
 from alpha_vantage.timeseries import TimeSeries
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def fetch_and_save_data(symbols, interval='1min', outputsize='full'):
-    api_key = 'YOUR_API_KEY'  # Replace with your Alpha Vantage API key
+    api_key = os.getenv('ALPHAVANTAGE_API_KEY') 
     ts = TimeSeries(key=api_key, output_format='pandas')
     
     if not os.path.exists('data'):
