@@ -1,4 +1,4 @@
-# High-Frequency Trading Data Analysis Project
+# High-Frequency Trading Data Analysis and Predictive Modeling
 
 ## Project Overview
 This project involves analyzing high-frequency trading data to identify patterns, anomalies, and insights. The analysis includes data preprocessing, exploratory data analysis (EDA), model training, impact analysis, and visualization. The project leverages Python libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn.
