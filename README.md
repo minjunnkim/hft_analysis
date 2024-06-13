@@ -38,6 +38,7 @@ This project involves analyzing high-frequency trading data to identify patterns
 python scripts/fetch_data.py
 ```
 (Note that you may change the symbols to change which companies data you use to train the model. Make sure that symbols in fetch_data.py contains all company tickers, data_processing.ipynb contain all training company tickers, and model_training.ipynb contain the one testing company ticker.)
+
 4. Run the notebooks in the following order:
     - data_preprocessing.ipynb
     - EDA.ipynb
