@@ -33,7 +33,11 @@ This project involves analyzing high-frequency trading data to identify patterns
 ## How to Run the Project
 1. Clone the repository.
 2. Install the required packages.
-3. Run the notebooks in the following order:
+3. Run the fetch_data.py by doing
+```bash
+python scripts/fetch_data.py
+```
+4. Run the notebooks in the following order:
     - data_preprocessing.ipynb
     - EDA.ipynb
     - model_training.ipynb
