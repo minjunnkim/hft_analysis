@@ -13,7 +13,7 @@ def fetch_and_save_data(symbols, interval='1min', outputsize='full'):
     
     for symbol in symbols:
         data, meta_data = ts.get_intraday(symbol=symbol, interval=interval, outputsize=outputsize)
-        data.to_csv(f'data/{symbol}_intraday.csv')
+        data.to_csv(f'data/intraday/{symbol}_intraday.csv')
 
 # List of symbols for different companies
 symbols = ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META', 'TSLA']  

@@ -1,7 +1,7 @@
 # High-Frequency Trading Data Analysis and Predictive Modeling
 
 ## Project Overview
-This project involves analyzing high-frequency trading data to identify patterns, anomalies, and insights. The analysis includes data preprocessing, exploratory data analysis (EDA), model training, impact analysis, and visualization. The project leverages Python libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn.
+This project involves analyzing high-frequency trading data to identify patterns, anomalies, and insights. The analysis includes data preprocessing, exploratory data analysis (EDA), model training, impact analysis, and visualization. The project leverages Python libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn. Note that data from the AlphaVantage API is VERY unreliable, and as seen in the AAPL example in prediction.ipynb. This is just an example of a usage of such prediction function.
 
 ## Data Preprocessing
 ### Steps
@@ -30,6 +30,13 @@ This project involves analyzing high-frequency trading data to identify patterns
 2. **Price Change and Volume Relationship**: Analyze the relationship between price changes and trading volume.
 3. **Feature Importance**: Identify and visualize the importance of different features in the model.
 
+## Predicting Tomorrow's Closing Price
+To predict tomorrow's closing price for a specific company, follow these steps:
+
+1. **Prepare the Latest Data**: Ensure you have the most recent trading data available for the specific company.
+2. **Train the Model**: Follow the steps in the `model_training.ipynb` notebook to train the model on historical data for the specific company.
+3. **Make Predictions**: Use the trained model to predict the next day's closing price based on the most recent data.
+
 ## How to Run the Project
 1. Clone the repository.
 2. Install the required packages.
@@ -44,6 +51,9 @@ python scripts/fetch_data.py
     - EDA.ipynb
     - model_training.ipynb
     - impact_analysis.ipynb
+
+5. Run the prediction notebook if desired:
+    - prediction.ipynb
 
 ## Conclusion
 
